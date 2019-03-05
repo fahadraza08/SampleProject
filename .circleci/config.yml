@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/java:8-jdk
+    steps:
+      - checkout
+      - run:
+          command: ant -f ./builds/build.xml
+general:
+  branches:
+    only:
+      - master # list of branches to build
