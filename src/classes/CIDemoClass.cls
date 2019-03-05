@@ -1,6 +1,5 @@
 public with sharing class CIDemoClass {
 	public CIDemoClass() {
-		//test comments 
 		system.debug('constructor..');
 	}
 	public Account createAccount(String Str){
@@ -11,5 +10,15 @@ public with sharing class CIDemoClass {
 			system.debug('Exception:'+e.getMessage());
 		}
 		return a;
+	}
+	
+	public Contact createContact(String Str){
+		Contact c = new Contact(Name=Str);
+		try{
+			insert c;
+		}catch(DmlException e){
+			system.debug('Exception:'+e.getMessage());
+		}
+		return c;
 	}
 }
