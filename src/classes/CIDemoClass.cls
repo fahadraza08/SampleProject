@@ -13,7 +13,7 @@ public with sharing class CIDemoClass {
 	}
 	
 	public Contact createContact(String Str){
-		Contact c = new Contact(Name=Str);
+		Contact c = new Contact(FirstName=Str);
 		try{
 			insert c;
 		}catch(DmlException e){
