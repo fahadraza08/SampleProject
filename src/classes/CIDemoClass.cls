@@ -11,4 +11,14 @@ public with sharing class CIDemoClass {
 		}
 		return a;
 	}
+	
+	public Contact createContact(String Str){
+		Contact c = new Contact(FirstName=Str);
+		try{
+			insert c;
+		}catch(DmlException e){
+			system.debug('Exception:'+e.getMessage());
+		}
+		return c;
+	}
 }
