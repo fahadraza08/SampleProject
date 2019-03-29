@@ -1,0 +1,13 @@
+<apex:page controller="SelectOptionController">
+ <apex:form > 
+   <apex:pageBlock >    
+    <apex:outputLabel > Countries : </apex:outputLabel>
+    <apex:selectList size="1" value="{!selectedCountry}">
+      <apex:selectOptions value="{!countrieLst }"/>
+    </apex:selectList> <br/>
+    
+    </apex:pageBlock> 
+   
+   </apex:form>
+
+</apex:page>

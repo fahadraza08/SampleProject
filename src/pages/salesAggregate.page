@@ -1,0 +1,14 @@
+<apex:page sidebar="false" controller="salesAggregate">
+   <apex:pageBlock title="Sales Aggregate">
+     <apex:variable value="{!0}" var="categoryMF"/>
+     <apex:pageBlockTable value="{!Results}" var="ar">
+       <apex:column headerValue="Variable">
+           <apex:variable value="{!IF(ar.StageName == 'Value Proposition',1,0)}" var="categoryMF"/>
+           <apex:outputText value="{!categoryMF}"></apex:outputText>
+       </apex:column>
+       <apex:column headerValue="Stage Name" value="{!ar.StageName}"/>
+       <apex:column headerValue="Total Amount" value="{!ar.Amount}"/>
+       <apex:column headerValue="Number of Orders" value="{!ar.Total}"/>
+     </apex:pageBlockTable>
+   </apex:pageBlock>
+</apex:page>

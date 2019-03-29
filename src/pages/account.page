@@ -1,0 +1,6 @@
+<apex:page showHeader="false" sidebar="false">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Welcome to EManager</h1>
+  Please Login!
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

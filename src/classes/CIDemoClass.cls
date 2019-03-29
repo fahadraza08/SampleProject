@@ -2,6 +2,7 @@ public with sharing class CIDemoClass {
 	public CIDemoClass() {
 		system.debug('constructor..');
 	}
+	//create new account
 	public Account createAccount(String Str){
 		Account a = new Account(Name=Str);
 		try{
@@ -11,7 +12,7 @@ public with sharing class CIDemoClass {
 		}
 		return a;
 	}
-	
+	// Create new contact
 	public Contact createContact(String Str){
 		Contact c = new Contact(FirstName=Str);
 		try{
