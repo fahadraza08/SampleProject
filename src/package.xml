@@ -278,5 +278,27 @@
     <members>SitePoweredBy</members>
     <name>ApexComponent</name>
   </types>
+  <types>
+    <members>Recommendation.CancelEdit</members>
+    <members>Recommendation.Clone</members>
+    <members>Recommendation.Delete</members>
+    <members>Recommendation.Edit</members>
+    <members>Recommendation.List</members>
+    <members>Recommendation.New</members>
+    <members>Recommendation.SaveEdit</members>
+    <members>Recommendation.Tab</members>
+    <members>Recommendation.View</members>
+    <name>ActionOverride</name>
+  </types>
+  <types>
+    <members>Recommendation.AcceptanceLabel</members>
+    <members>Recommendation.ActionReference</members>
+    <members>Recommendation.Description</members>
+    <members>Recommendation.ImageId</members>
+    <members>Recommendation.IsActionActive</members>
+    <members>Recommendation.Name</members>
+    <members>Recommendation.RejectionLabel</members>
+    <name>CustomField</name>
+  </types>
   <version>36.0</version>
 </Package>
